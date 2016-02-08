@@ -1,0 +1,24 @@
+sounds:
+    ping: /usr/share/sounds/purple/receive.wav
+    pm: /usr/share/sounds/purple/alert.wav
+        
+notify:
+    # You can omit this setting.  I use it to make sure sounds always go
+    # through my laptop speakers so that I hear them even if I have my
+    # bluetooth headset connected.
+    paplay_args: '-d alsa_output.pci-0000_00_1b.0.analog-stereo'
+
+    # regex to ping on
+    ping: '@lex(\W|$)'
+
+    # regex for @here
+    at_here: '@(here|all)(\W|$)'
+
+    # Your name as configured on the HipChat server
+    my_name: 'Lex Neva'
+
+    # Chats you want @here notifications for.
+    at_here_chats:
+        - chat1
+        - chat2
+        - etc
